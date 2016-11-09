@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ribbiter</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/app.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__flex">
+          <div class="navbar__header">
+            <a href="/" class="navbar-home">Ribbiter</a>
+          </div>
+          <div class="navbar__links">
+            <ul class="navbar__links-right">
+
+              <li><a class="link" href="/app">Ribbets</a></li>
+
+              <li><a class="link" href="/users">Frogs</a></li>
+
+              <li><a class="link" href="/login">Login</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="section">
+      <div class="container">
+
+        {% block content %}
+
+        {% endblock %}
+
+      </div>
+    </div>
+
+  </body>
+</html>
