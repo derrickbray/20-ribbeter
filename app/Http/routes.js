@@ -18,3 +18,6 @@
 const Route = use('Route');
 
 Route.on('/').render('layout');
+
+Route.get('/register', 'UserController.create');
+Route.post('/register', 'UserController.store');

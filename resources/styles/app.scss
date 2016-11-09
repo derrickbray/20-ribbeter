@@ -3,46 +3,57 @@
 
 $c-green: #92c94e;
 $c-text: #cdecd1;
+$c-back: #ecf7f2;
+$c-borderblue: #67c5cc;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import 'nav';
 
-.container {
-  width: 65rem;
-  margin: 0 auto;
+
+.section {
+  height: 100vh;
+  margin: 0;
+  background: $c-back;
 }
 
-.navbar {
-  width: 100%;
+.register-card {
+  width: 40%;
+  margin: auto;
+  background: white;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+}
+
+.card-container {
+  margin: 0.5rem;
+}
+
+.card__head {
+  padding: 0rem;
   background: $c-green;
-
-  &__flex {
-    display: flex;
-    justify-content: space-between;
-
-  }
-  &__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  &-home {
-    color: $c-text;
-    text-decoration: none;
-  }
-
-  &__links {
-    &-right {
-      display: flex;
-
-      & li {
-        margin: 1rem;
-      }
-    }
-  }
-}
-.link {
   color: $c-text;
-  text-decoration: none;
+}
+
+.form-line {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem, 0.5rem, 0, 0.5rem;
+
+}
+
+.form-control {
+  font-size: 0.8rem;
+  border: 0;
+  border-bottom: 0.1rem solid $c-borderblue;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+// padding: 0.9rem;
+margin: 1rem;
 }
