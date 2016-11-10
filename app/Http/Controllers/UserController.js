@@ -7,7 +7,7 @@ class UserController {
 
   * create(request, response) {
     //
-    yield response.sendView('user.register');
+    yield response.sendView('user.index');
   }
 
   * store(request, response) {
