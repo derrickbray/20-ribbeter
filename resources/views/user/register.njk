@@ -13,8 +13,8 @@
     </div>
 
     <div class="form-line">
-      {{ form.label('title', 'Title') }}
-      {{ form.text('title', null, { class: 'form-control', placeholder: 'Title'}) }}
+      {{ form.label('username', 'Username') }}
+      {{ form.text('username', null, { class: 'form-control', placeholder: 'Username'}) }}
     </div>
 
     <div class="form-line">
@@ -35,6 +35,5 @@
   </div>
 </div>
 
-
-
+{{ form.close() }}
 {% endblock %}
