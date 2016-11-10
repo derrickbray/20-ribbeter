@@ -13,17 +13,15 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'login';
 
 .grid {
-
   &-flex {
-  display: flex;
-  flex-wrap: wrap;
-
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .page-title {
-width: 100%;
-border-bottom: 0.2rem solid $c-borderblue;
+  width: 100%;
+  border-bottom: 0.2rem solid $c-borderblue;
 }
 
 .user__card {
@@ -37,9 +35,7 @@ border-bottom: 0.2rem solid $c-borderblue;
   &-img {
     margin: 0.3rem;
   }
-  &-text {
 
-  }
   &-title {
     margin-bottom: 0.3rem;
   }
