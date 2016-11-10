@@ -1,0 +1,34 @@
+{% extends "layout" %}
+
+{% block content %}
+
+  {{form.open({ action: 'LoginController.store'}) }}
+  {{ csrfField }}
+
+
+  <div class="register-card">
+
+    <div class="card-container">
+      <div class="card__head">
+        <h2>Login</h2>
+      </div>
+
+      <div class="form-line">
+      {{ form.label('email', 'Enter email address') }}
+      {{ form.text('email', null, { class: 'form-control', placeholder: 'Email'}) }}
+      </div>
+
+      <div class="form-line">
+      {{ form.label('password', 'Password') }}
+      {{ form.password('password', null, {class: 'form-control', placeholder:'Password'}) }}
+      </div>
+
+      <div class="button">
+        {{ form.submit('Sign Up', null, {class: 'btn'}) }}
+        {{ form.submit('Login', null, {class: 'btn btn-green'}) }}
+      </div>
+
+    </div>
+  </div>
+{{ form.close() }}
+{% endblock %}
