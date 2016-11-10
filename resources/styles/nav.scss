@@ -1,5 +1,5 @@
 .container {
-  width: 65rem;
+  flex-basis: 60rem;
   margin: 0 auto;
 }
 
@@ -10,13 +10,14 @@
   &__flex {
     display: flex;
     justify-content: space-between;
-
   }
+
   &__header {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   &-home {
     color: $c-text;
     text-decoration: none;

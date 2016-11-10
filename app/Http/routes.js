@@ -27,3 +27,5 @@ Route.post('/login', 'LoginController.store');
 
 Route.get('/users', 'UserController.create');
 Route.post('/users', 'UserController.store');
+
+Route.any('*').render('vue').middleware('auth');
