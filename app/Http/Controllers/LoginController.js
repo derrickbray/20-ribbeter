@@ -14,12 +14,12 @@ class LoginController {
 
     try {
       const validLogin = yield request.auth.attempt(email, password);
-      yield request.with({ sucess: 'You are Logged In!' }).flash();
+      yield request.with({ success: 'You are Logged In!' }).flash();
 
       response.redirect('/users');
     } catch (e) {
       yield request.withOut('password')
-      .andWith({ error: 'Sorry, somethings not right.' }).flash();
+      .andWith({ error: 'Sorry, Something Went Wrong.' }).flash();
 
       response.redirect('back');
     }
