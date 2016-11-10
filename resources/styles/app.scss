@@ -12,4 +12,38 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'nav';
 @import 'login';
 
-.grid {}
+.grid {
+
+  &-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  }
+}
+
+.page-title {
+width: 100%;
+border-bottom: 0.2rem solid $c-borderblue;
+}
+
+.user__card {
+  display: flex;
+  flex-grow: 1;
+  width: calc(100% / 3 - 2rem);
+  margin: 1rem;
+  background: white;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+
+  &-img {
+    margin: 0.3rem;
+  }
+  &-text {
+
+  }
+  &-title {
+    margin-bottom: 0.3rem;
+  }
+  &-handle {
+    margin: 0;
+  }
+}
