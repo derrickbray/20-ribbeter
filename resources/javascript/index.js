@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
+    path: '/app',
     name: 'index',
     component: Index,
   },
@@ -17,7 +17,7 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   routes,
-  base: '/app'
+  base: '/app',
 });
 
 const app = new Vue({ ...App, router }).$mount('.vue-app');
