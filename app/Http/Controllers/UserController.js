@@ -5,10 +5,14 @@ const Hash = use('Hash');
 
 class UserController {
 
-  * create(request, response) {
+  * index(request, response) {
     const users = yield User.all();
 
     yield response.sendView('user.index', { users: users.toJSON() });
+  }
+
+  * create(request, response) {
+    yield response.sendView('user.register');
   }
 
   * store(request, response) {

@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/app',
+    path: '/',
     name: 'index',
     component: Index,
   },

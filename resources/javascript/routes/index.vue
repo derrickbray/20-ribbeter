@@ -1,16 +1,30 @@
 <template lang="html">
   <div class="">
 
-    <div class="register-card">
+    <div class="">
 
-      <div class="card-container">
-        <div class="card__head">
-          <h2>Let's Get Started!</h2>
+      <div class="register-card">
+        <div class="card-container">
+
+          <div class="card__head">
+            <h2>New Ribbits</h2>
+          </div>
+
+
+
+
         </div>
+      </div>
 
-        <div class="button">
-          {{ form.submit('Login', null, {class: 'btn-white'}) }}
-          {{ form.submit('Sign Up', null, {class: 'btn-green'}) }}
+      <div class="register-card">
+        <div class="card-container">
+
+          <div class="card__head">
+            <h2>See What's Happening</h2>
+          </div>
+
+
+
         </div>
       </div>
 

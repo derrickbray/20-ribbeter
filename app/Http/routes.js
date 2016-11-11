@@ -17,7 +17,7 @@
 
 const Route = use('Route');
 
-Route.on('/').render('layout');
+Route.on('/').render('welcome');
 
 Route.get('/register', 'UserController.create');
 Route.post('/register', 'UserController.store');
@@ -25,8 +25,7 @@ Route.post('/register', 'UserController.store');
 Route.get('/login', 'LoginController.create');
 Route.post('/login', 'LoginController.store');
 
-Route.get('/users', 'UserController.create');
-Route.post('/users', 'UserController.store');
+Route.get('/users', 'UserController.index');
 
 Route.resource('/api/ribbits', 'Api/RibbitController').middleware('auth');
 
