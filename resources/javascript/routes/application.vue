@@ -32,7 +32,7 @@ export default {
         });
     },
 
-    saveRibbit() {
+    saveRibbit(input) {
       fetch('/api/ribbits', {
           method: 'POST',
           credentials: 'same-origin',
@@ -43,7 +43,7 @@ export default {
         })
         .then((r) => r.json())
         .then((ribbits) => {
-          this.ribbits = ribbits;
+          this.ribbits = [ribbits, ...ribbits];
         });
     },
   },

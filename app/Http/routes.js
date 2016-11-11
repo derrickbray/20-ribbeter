@@ -27,6 +27,6 @@ Route.post('/login', 'LoginController.store');
 
 Route.get('/users', 'UserController.index');
 
-Route.resource('/api/ribbits', 'Api/RibbitController').middleware('auth');
+Route.resource('/api/ribbits', 'RibbitController').middleware('auth');
 
 Route.any('*').render('vue').middleware('auth');
