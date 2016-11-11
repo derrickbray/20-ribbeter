@@ -15,21 +15,28 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'nav';
 @import 'login';
 @import 'grid-layout';
+@import 'alert-paddles';
 
+.main {
+  display: flex;
+}
 
-.alert {
-  width: 30%;
+.ribbit-card {
+  flex-basis: 30%;
+  margin: auto;
+  margin-top: 2rem;
+  background: white;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+}
+
+.ribbits {
+  flex-basis: 65%;
+}
+
+.ribbit-textarea {
+  width: 90%;
   margin: 1rem auto;
-  padding: 0.5rem;
-  border-radius: 0.4rem;
-  color: $c-text;
-  text-align: center;
-}
+  border: 0;
+  border-bottom: 0.2rem solid $c-borderblue;
 
-.nope {
-  background: $c-danger;
-}
-
-.sure {
-  background: $c-success;
 }

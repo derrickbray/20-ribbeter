@@ -1,0 +1,16 @@
+.alert {
+  width: 30%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  color: $c-text;
+  text-align: center;
+}
+
+.nope {
+  background: $c-danger;
+}
+
+.sure {
+  background: $c-success;
+}

@@ -1,10 +1,10 @@
 .container {
-  flex-basis: 60rem;
+  width: 60rem;
   margin: 0 auto;
 }
 
 .navbar {
-  width: 100%;
+  flex-basis: 100%;
   background: $c-green;
 
   &__flex {
