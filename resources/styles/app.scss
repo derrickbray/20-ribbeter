@@ -5,43 +5,31 @@ $c-green: #92c94e;
 $c-text: #cdecd1;
 $c-back: #ecf7f2;
 $c-borderblue: #67c5cc;
+$c-pure-white: #fff;
+$c-danger: #d9534f;
+$c-success: #5cb85c;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'nav';
 @import 'login';
+@import 'grid-layout';
 
-.grid {
-  &-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
+.alert {
+  width: 30%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  color: $c-text;
+  text-align: center;
 }
 
-.page-title {
-  width: 100%;
-  border-bottom: 0.2rem solid $c-borderblue;
+.nope {
+  background: $c-danger;
 }
 
-.user__card {
-  display: flex;
-  flex-grow: 1;
-  flex-basis: calc(100% / 3 - 2rem);
-  max-width: 23rem;
-  min-width: 12rem;
-  margin: 1rem;
-  background: white;
-  box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
-
-  &-img {
-    margin: 0.3rem;
-  }
-
-  &-title {
-    margin-bottom: 0.3rem;
-  }
-  &-handle {
-    margin: 0;
-  }
+.sure {
+  background: $c-success;
 }
