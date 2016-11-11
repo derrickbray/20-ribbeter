@@ -33,10 +33,19 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-basis: 65%;
 }
 
+.index__card-text{
+  padding: 1rem;
+
+}
 .ribbit-textarea {
-  width: 90%;
-  margin: 1rem auto;
+  width: 100%;
+
   border: 0;
   border-bottom: 0.2rem solid $c-borderblue;
+  background: $c-back;
 
+}
+
+.btn-index {
+  border-top: 0.1rem solid $c-borderblue;
 }

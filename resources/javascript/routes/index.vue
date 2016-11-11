@@ -11,15 +11,16 @@
           <div class="card__head">
             <h2>New Ribbits</h2>
           </div>
-          <div class="user__card-text">
+          <div class="user__card-text index__card-text">
             <div class="user__card-title">What's going on?</div>
             <textarea v-model="content" rows="10" class="ribbit-textarea"></textarea>
 
           </div>
 
-          <div class="button">
-            <a href="/register" class="btn-white">Sign Up</a>
-            {{ form.submit('app', null, {class: 'btn-green'}) }}
+          <div class="button btn-index">
+            <button class="btn-white">Cancel</button>
+            <button class="btn-green">Save</button>
+
           </div>
 
         </div>
@@ -31,7 +32,7 @@
           <div class="card__head">
             <h2>See What's Happening</h2>
           </div>
-
+          <h1>hello</h1>
 
 
         </div>
@@ -47,6 +48,7 @@ export default {
 
   data() {
     return {
+      content: '',
     };
   },
 
