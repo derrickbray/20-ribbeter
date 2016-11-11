@@ -40,6 +40,20 @@
   justify-content: space-between;
 }
 
-.btn {
-margin: 1rem;
+.btn-green {
+  margin: 1rem;
+  padding: 0.8rem;
+  border: 0;
+  background: $c-green;
+  color: $c-back;
+  font-size: 1rem;
+}
+
+.btn-white {
+  margin: 1rem;
+  padding: 0.8rem;
+  border: 0;
+  background: $c-back;
+  color: $c-borderblue;
+  font-size: 1rem;
 }

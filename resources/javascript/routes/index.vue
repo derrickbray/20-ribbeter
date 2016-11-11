@@ -9,8 +9,8 @@
         </div>
 
         <div class="button">
-          {{ form.submit('Login', null, {class: 'btn btn-green'}) }}
-          {{ form.submit('Sign Up', null, {class: 'btn btn-green'}) }}
+          {{ form.submit('Login', null, {class: 'btn-white'}) }}
+          {{ form.submit('Sign Up', null, {class: 'btn-green'}) }}
         </div>
       </div>
 
