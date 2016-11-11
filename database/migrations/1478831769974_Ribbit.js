@@ -8,8 +8,8 @@ class RibbitSchema extends Schema {
     this.create('ribbits', (table) => {
       table.increments();
       table.integer('user_id').references('users.id');
-      table.text('comment');
-      table.integer('post_id').references('posts.id');
+      table.text('content');
+
       table.timestamps();
     });
   }

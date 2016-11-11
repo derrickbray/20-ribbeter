@@ -30,7 +30,10 @@
           <div class="card__head">
             <h2>See What's Happening</h2>
           </div>
-          <h1>hello</h1>
+          <div class="content-block" v-for="ribbit in ribbits">
+            <h1>{{ ribbit.content }}</h1>
+            <p>@{{ ribbit.author.username }}</p>
+          </div>
 
 
         </div>
