@@ -11,7 +11,8 @@ class RibbitController {
   }
 
   * store(request, response) {
-    const input = request.only('user_id', 'comment', 'post_id');
+    const input = request.only('body');
+    input.user_id = request currentUser.id;
     const ribbit = yield Ribbit.create(input);
 
     response.send(ribbit);

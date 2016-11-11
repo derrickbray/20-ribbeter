@@ -2,14 +2,14 @@
   <div class="">
     <router-view
       :ribbits="ribbits"
-      @findAllRibbits="findAllRibbits">
+      @findAllRibbits="findAllRibbits"
+      @saveRibbit="saveRibbit"
+      >
     </router-view>
   </div>
 </template>
 
 <script>
-
-
 export default {
   data() {
     return {
@@ -18,27 +18,34 @@ export default {
   },
 
   mounted() {
-  this.findAllRibbits();
-},
+    this.findAllRibbits();
+  },
 
   methods: {
     findAllRibbits() {
-        fetch('/api/ribbits', {
-          method: 'POST',
+      fetch('/api/ribbits', {
           credentials: 'same-origin',
         })
-          .then((r) => r.json())
-          .then((ribbits) => {
-            this.ribbits = ribbits;
-          });
-      },
-
-    getRibbits() {
-      fetch('/api/ribbits')
         .then((r) => r.json())
         .then((ribbits) => {
           this.ribbits = ribbits;
-      });
+        });
+    },
+
+    saveRibbit() {
+      fetch('/api/ribbits', {
+          method: 'POST',
+          credentials: 'same-origin',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+            body: JSON.stringify(input),
+        })
+        .then((r) => r.json())
+        .then((ribbits) => {
+          this.ribbits = ribbits;
+        });
+    },
   },
 };
 </script>

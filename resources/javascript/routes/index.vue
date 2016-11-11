@@ -5,7 +5,7 @@
 
     <div class="main">
 
-      <div class="ribbit-card">
+      <form class="ribbit-card" @submit.prevent="$emit('saveRibbit', { content: content })">
         <div class="card-container">
 
           <div class="card__head">
@@ -18,13 +18,11 @@
           </div>
 
           <div class="button btn-index">
-            <button class="btn-white">Cancel</button>
+            <button class="btn-white" type="button" @click="content = ''">Cancel</button>
             <button class="btn-green">Save</button>
-
           </div>
-
         </div>
-      </div>
+      </form>
 
       <div class="ribbit-card ribbits">
         <div class="card-container">
@@ -45,7 +43,7 @@
 
 <script>
 export default {
-
+  props: ['ribbits'],
   data() {
     return {
       content: '',
