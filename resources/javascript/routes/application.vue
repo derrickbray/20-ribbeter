@@ -43,7 +43,7 @@ export default {
         })
         .then((r) => r.json())
         .then((ribbits) => {
-          this.ribbits = [ribbits, ...ribbits];
+          this.ribbits = [...ribbits, ribbits];
         });
     },
   },

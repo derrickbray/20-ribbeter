@@ -1,14 +1,14 @@
 <template lang="html">
   <div class="">
 
-    <h1 class="page-title">Ribbits</h1>
+    <h1 class="page-title">Recent Ribbits</h1>
 
     <div class="main">
 
       <form class="ribbit-card" @submit.prevent="$emit('saveRibbit', { content: content })">
         <div class="card-container">
 
-          <div class="card__head">
+          <div class="card__head card__head-new">
             <h2>New Ribbits</h2>
           </div>
           <div class="user__card-text index__card-text">
@@ -18,7 +18,7 @@
           </div>
 
           <div class="button btn-index">
-            <button class="btn-white" type="button" @click="content = ''">Cancel</button>
+            <button class="btn-white" type="button" @click="content = ''">Clear</button>
             <button class="btn-green">Save</button>
           </div>
         </div>
@@ -30,11 +30,13 @@
           <div class="card__head">
             <h2>See What's Happening</h2>
           </div>
+          <div class="load">
+            <a href="/app" class="load-more">Load New Ribbits</a>
+          </div>
           <div class="content-block" v-for="ribbit in ribbits">
-            <h3 class="content-user">@{{ ribbit.author.username }}</h3>
+            <a href="/users" class="content-user"><h3 class="content-user">@{{ ribbit.author.username }}</h3></a>
             <h4 class="content-text">{{ ribbit.content }}</h4>
           </div>
-
 
         </div>
       </div>

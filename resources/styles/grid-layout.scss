@@ -1,8 +1,8 @@
 
-  .grid-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 .page-title {
@@ -16,7 +16,7 @@
   flex-grow: 1;
   min-width: 15rem;
   margin: 1rem;
-  background: white;
+  background: $c-pure-white;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
 
   &-img {

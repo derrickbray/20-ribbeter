@@ -40,10 +40,11 @@
 .button {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 0.5rem;
 }
 
 .btn-green {
-  margin: 1rem;
+  // margin: 1rem;
   padding: 0.8rem;
   border: 0;
   background: $c-green;
@@ -52,7 +53,7 @@
 }
 
 .btn-white {
-  margin: 1rem;
+  // margin: 1rem;
   padding: 0.8rem;
   border: 0;
   background: $c-back;

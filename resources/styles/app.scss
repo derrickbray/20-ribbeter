@@ -19,13 +19,14 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 .main {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .ribbit-card {
   flex-basis: 30%;
   margin: auto;
   margin-top: 2rem;
-  background: white;
+  background: $c-pure-white;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
 }
 
@@ -34,18 +35,52 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 
 .index__card-text{
-  padding: 1rem;
+  padding: 1rem 0.5rem;
 
 }
+
+.card__head-new {
+  padding: 1rem 0.5rem;
+}
+
 .ribbit-textarea {
   width: 100%;
-
   border: 0;
   border-bottom: 0.2rem solid $c-borderblue;
   background: $c-back;
-
 }
 
 .btn-index {
+  padding: 1rem 0.5rem;
   border-top: 0.1rem solid $c-borderblue;
+}
+
+.load {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  border-bottom: 0.1rem solid $c-borderblue;
+
+  & a {
+    color: $c-borderblue;
+    text-decoration: none;
+  }
+
+  &-more {
+    flex-basis: 100%;
+    padding: 0.5rem;
+    background: $c-back;
+    text-align: center;
+
+  }
+}
+
+.content-block {
+  padding: 1rem 0.5rem;
+  border-bottom: 0.1rem solid $c-borderblue;
+}
+
+.content-user {
+  margin-bottom: 0;
+  color: $c-borderblue;
 }
