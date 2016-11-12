@@ -31,8 +31,8 @@
             <h2>See What's Happening</h2>
           </div>
           <div class="content-block" v-for="ribbit in ribbits">
-            <h1>{{ ribbit.content }}</h1>
-            <p>@{{ ribbit.author.username }}</p>
+            <h3 class="content-user">@{{ ribbit.author.username }}</h3>
+            <h4 class="content-text">{{ ribbit.content }}</h4>
           </div>
 
 

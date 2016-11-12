@@ -1,9 +1,9 @@
-.grid {
-  &-flex {
+
+  .grid-flex {
     display: flex;
     flex-wrap: wrap;
   }
-}
+
 
 .page-title {
   width: 100%;
@@ -12,10 +12,9 @@
 
 .user__card {
   display: flex;
+  flex-basis: calc(100% / 3 - 2rem);
   flex-grow: 1;
-  width: calc(100% / 3 - 2rem);
-  max-width: 23rem;
-  min-width: 12rem;
+  min-width: 15rem;
   margin: 1rem;
   background: white;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
