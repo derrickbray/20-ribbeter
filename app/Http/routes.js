@@ -25,6 +25,8 @@ Route.post('/register', 'UserController.store');
 Route.get('/login', 'LoginController.create');
 Route.post('/login', 'LoginController.store');
 
+Route.any('/logout', 'LoginController.destroy');
+
 Route.get('/users', 'UserController.index');
 
 Route.resource('/api/ribbits', 'RibbitController').middleware('auth');

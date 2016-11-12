@@ -15,13 +15,18 @@
           </div>
           <div class="navbar__links">
             <ul class="navbar__links-right">
+              {% if currentUser %}
 
               <li><a class="link" href="/app">Ribbets</a></li>
 
               <li><a class="link" href="/users">Frogs</a></li>
 
+              <li><a class="link" href="/logout">Logout</a></li>
+              {% else  %}
+
               <li><a class="link" href="/login">Login</a></li>
 
+              {% endif %}
             </ul>
           </div>
         </div>

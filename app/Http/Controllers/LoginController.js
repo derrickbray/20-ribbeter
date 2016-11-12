@@ -25,7 +25,15 @@ class LoginController {
     }
   }
 
+  * destroy(request, response) {
+    yield request.auth.logout();
 
+
+    yield request.with({ success: 'You have logged out!' }).flash();
+
+
+    response.redirect('/login');
+  }
 }
 
 module.exports = LoginController;
