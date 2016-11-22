@@ -35,8 +35,8 @@ class UserController {
       .andWith({ error: 'That username or email has already been used.' }).flash();
 
       response.redirect('back');
+      response.send(user);
     }
-    response.send(user);
   }
 
 }

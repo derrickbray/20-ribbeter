@@ -5,7 +5,9 @@ const Ribbit = use('App/Model/Ribbit');
 class RibbitController {
 
   * index(request, response) {
-    const ribbits = yield Ribbit.with('author').fetch();
+    const ribbits = yield Ribbit.with('author')
+      .orderBy('created_at', 'desc')
+      .fetch();
 
     response.send(ribbits);
   }

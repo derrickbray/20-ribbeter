@@ -5,7 +5,7 @@
 
     <div class="main">
 
-      <form class="ribbit-card" @submit.prevent="$emit('saveRibbit', { content: content })">
+      <form class="ribbit-card" @submit.prevent="saveRibbit">
         <div class="card-container">
 
           <div class="card__head card__head-new">
@@ -31,7 +31,9 @@
             <h2>See What's Happening</h2>
           </div>
           <div class="load">
-            <a href="/app" class="load-more">Load New Ribbits</a>
+            <button type="button" name="button" class="load-more" @click="$emit('findAllRibbits')">
+              Load New Ribbits
+            </button>
           </div>
           <div class="content-block" v-for="ribbit in ribbits">
             <a href="/users" class="content-user"><h3 class="content-user">@{{ ribbit.author.username }}</h3></a>
@@ -56,7 +58,10 @@ export default {
   },
 
   methods: {
-
+    saveRibbit() {
+      this.$emit('saveRibbit', { content: this.content });
+      this.content = '';
+    }
   },
 };
 </script>

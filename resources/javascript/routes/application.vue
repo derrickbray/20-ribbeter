@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      ribbits: [''],
+      ribbits: [],
     };
   },
 
@@ -42,8 +42,8 @@ export default {
             body: JSON.stringify(input),
         })
         .then((r) => r.json())
-        .then((ribbits) => {
-          this.ribbits = [...ribbits, ribbits];
+        .then((newRibbit) => {
+          this.ribbits = [newRibbit, ...this.ribbits];
         });
     },
   },

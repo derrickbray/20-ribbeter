@@ -69,9 +69,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   &-more {
     flex-basis: 100%;
     padding: 0.5rem;
+    border: 0;
+    outline: none;
     background: $c-back;
     text-align: center;
-
   }
 }
 
