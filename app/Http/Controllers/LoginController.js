@@ -29,7 +29,7 @@ class LoginController {
     yield request.auth.logout();
 
 
-    yield request.with({ success: 'You have logged out!' }).flash();
+    yield request.with({ success: 'You Are Outta Here!' }).flash();
 
 
     response.redirect('/login');

@@ -25,7 +25,7 @@ class UserController {
       yield request.auth.login(user);
 
       yield request.with({
-        success: 'You have successfully registered with ribbeter!',
+        success: 'You have successfully registered!',
       }).flash();
 
       response.redirect('/users');

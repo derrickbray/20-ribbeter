@@ -1,8 +1,8 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-$c-green: #92c94e;
-$c-text: #cdecd1;
+$c-green: #00838F;
+$c-text: #fff;
 $c-back: #ecf7f2;
 $c-borderblue: #67c5cc;
 $c-pure-white: #fff;
@@ -70,9 +70,9 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     flex-basis: 100%;
     padding: 0.5rem;
     border: 0;
-    outline: none;
     background: $c-back;
     text-align: center;
+    outline: none;
   }
 }
 

@@ -7,7 +7,13 @@
 
 .page-title {
   width: 100%;
+  padding: 1rem 1rem;
   border-bottom: 0.2rem solid $c-borderblue;
+  text-align: center;
+}
+
+.card__container {
+  width: 40%;
 }
 
 .user__card {

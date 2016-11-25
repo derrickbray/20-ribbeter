@@ -11,6 +11,7 @@
   &__flex {
     display: flex;
     justify-content: space-between;
+    padding: 0 0.8rem;
   }
 
   &__header {
@@ -30,6 +31,9 @@
 
       & li {
         margin: 1rem;
+        &:last-of-type {
+          margin-right: -0.1rem;
+        }
       }
     }
   }

@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="">
 
-    <h1 class="page-title">Recent Ribbits</h1>
+    <h1 class="page-title">Recent Posts</h1>
 
     <div class="main">
 
@@ -9,7 +9,7 @@
         <div class="card-container">
 
           <div class="card__head card__head-new">
-            <h2>New Ribbits</h2>
+            <h2>New Posts</h2>
           </div>
           <div class="user__card-text index__card-text">
             <div class="user__card-title">What's going on?</div>
@@ -32,7 +32,7 @@
           </div>
           <div class="load">
             <button type="button" name="button" class="load-more" @click="$emit('findAllRibbits')">
-              Load New Ribbits
+              Load New Posts
             </button>
           </div>
           <div class="content-block" v-for="ribbit in ribbits">
